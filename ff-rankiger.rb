@@ -73,7 +73,7 @@ class Array
   end
 end
 
-# Get Target's followees
+# Get Target's Followees
 if target.friend_ids_limited?
   puts "Target's API is being limited. Please wait a minutes and try again."
   exit
@@ -82,12 +82,12 @@ untreated_followees = target.friend_ids              # untreated followees
 TARGET_FOLLOWEES = untreated_followees.size          # number of target's followees
 puts "Get complete target's followees."
 
-# 配列の用意
+# Prepare Arrays
 treated_followees   = []                             # treated followees
 secret_followees    = []                             # secret followees
 followees_followees = []                             # followees' followees
 
-# 調査の実行
+# Get Followee's Followees Data
 puts "Getting data..."
 
 catch :main_loop do
@@ -147,7 +147,7 @@ catch :main_loop do
   end
 end
 
-# 結果の分析
+# Analyze Data
 puts "-----#{treated_followees.size}/#{TARGET_FOLLOWEES}-----"
 puts "Analyzing data..."
 result = followees_followees.count                   # count overlap (return: Hash)
