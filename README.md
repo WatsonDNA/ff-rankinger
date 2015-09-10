@@ -9,7 +9,7 @@ This Ruby script output *Followee's Followee Ranking List* (to HTML file). To us
 1. Write your application's Consumer Key and Consumer Secret in the script.
 2. Write target's Access Token and Access Token Secret in the script.
 3. Write research acounts' Access Token and Access Token Secret in the script, if you need.
-4. Run `ruby hb-converter.rb` .
+4. Run `ruby ff-rankiger.rb` .
 
 ## Options
 
